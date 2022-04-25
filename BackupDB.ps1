@@ -67,6 +67,6 @@ echo $FILE_BACKUP_DBNAME
 
 #
 # ─── INVOKING THE COMPLETE COMMAND ──────────────────────────────────────────────
-#
-
+#C:\Program Files\MySQL\MySQL Server 8.0\bin
+cd C:\Program Files\MySQL\MySQL Server 8.0\bin
 .\mysqldump.exe --defaults-extra-file=mysql-credentials.cnf -h $dbHost   $dbName > $FILE_BACKUP_DBNAME
