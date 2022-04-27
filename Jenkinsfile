@@ -3,12 +3,13 @@ pipeline {
   agent any 
   
   stages {
-    stage('Choose DB')
+    stage('Choose DB') {
     steps {
 parameters {
   choice choices: ['NorthwindDB', 'DevOpsDB'], name: 'DBName'
 }
     }
+	}
 
     stage("DBBACKUP") {
       steps {
