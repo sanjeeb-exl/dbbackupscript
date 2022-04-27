@@ -46,7 +46,7 @@ $FILE_BACKUP_DBNAME         = $PATH_DBNAME_BAKUP+$FILE_NAME_BACKUP_DBNAME+$ACTUA
 $dbUser     ="root"
 $dbPassword ="exl@12345"
 $dbHost     ="localhost"
-$dataname     =%DBName%
+$dbName     ="Northwinddb"
 
 
 #
@@ -69,4 +69,4 @@ echo $FILE_BACKUP_DBNAME
 # ─── INVOKING THE COMPLETE COMMAND ──────────────────────────────────────────────
 #C:\Program Files\MySQL\MySQL Server 8.0\bin
 pushd C:\Program Files\MySQL\MySQL Server 8.0\bin
-.\mysqldump.exe --defaults-extra-file=mysql-credentials.cnf -h $dbHost   $dataname > $FILE_BACKUP_DBNAME
+.\mysqldump.exe --defaults-extra-file=mysql-credentials.cnf -h $dbHost   $dbName > $FILE_BACKUP_DBNAME
