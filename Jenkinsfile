@@ -18,7 +18,7 @@ pipeline {
 
     stage("DBBACKUP") {
       steps {
-        powershell returnStatus: true, script: 'BackupDB.ps1'
+	      powershell returnStatus: true, script: '${workspace}\BackupDB.ps1'
       }
     }
     
