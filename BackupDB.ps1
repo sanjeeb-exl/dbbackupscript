@@ -70,4 +70,4 @@ echo $FILE_BACKUP_DBNAME
 #C:\Program Files\MySQL\MySQL Server 8.0\bin
 pushd C:\Program Files\MySQL\MySQL Server 8.0\bin
 echo "I am here"
-.\mysqldump.exe --defaults-extra-file=mysql-credentials.cnf -h $dbHost   $dbName > $FILE_BACKUP_DBNAME
+mysqldump.exe --defaults-extra-file=mysql-credentials.cnf -h $dbHost   $dbName > $FILE_BACKUP_DBNAME
