@@ -27,6 +27,7 @@ post {
 always {
 
      /* junit 'examples/feed-combiner-java8-webapp/target/surefire-reports/*.xml'*/
-echo "This will be executed always" } 
+emailext body: '$PROJECT_DEFAULT_CONTENT', subject: '$PROJECT_DEFAULT_SUBJECT', to: 'devops81@gmail.com'
+} 
 }        
 }
