@@ -27,7 +27,7 @@ post {
 always {
 
      /* junit 'examples/feed-combiner-java8-webapp/target/surefire-reports/*.xml'*/
-    emailext mimeType: 'text/html', replyTo: 'sanjeevpande@gmail.com', subject: "${env.JOB_NAME} - Build# ${env.BUILD_NUMBER} - ${env.BUILD_STATUS}", to: 'devops81@gmail.com', body: '${SCRIPT, template='francois.email.groovy.template'}'
+  emailext body: '${env.JOB_NAME} - Build# ${env.BUILD_NUMBER} - ${env.BUILD_STATUS}', subject: '${env.JOB_NAME} - Build# ${env.BUILD_NUMBER} - ${env.BUILD_STATUS}', to: 'devops81@gmail.com'
 
 } 
 }        
