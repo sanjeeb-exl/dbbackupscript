@@ -27,7 +27,8 @@ post {
 always {
 
      /* junit 'examples/feed-combiner-java8-webapp/target/surefire-reports/*.xml'*/
-emailext body: '$PROJECT_DEFAULT_CONTENT', subject: '$PROJECT_DEFAULT_SUBJECT', to: 'devops81@gmail.com'
+    emailext mimeType: 'text/html', replyTo: 'sanjeevpande@gmail.com', subject: "${env.JOB_NAME} - Build# ${env.BUILD_NUMBER} - ${env.BUILD_STATUS}", to: 'devops81@gmail.com', body: '${SCRIPT, template='regressionfailed.groovy'}'
+
 } 
 }        
 }
