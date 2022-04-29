@@ -23,5 +23,10 @@ pipeline {
     }
     
   }
-        
+post {
+always {
+
+     /* junit 'examples/feed-combiner-java8-webapp/target/surefire-reports/*.xml'*/
+echo "This will be executed always" } 
+}        
 }
