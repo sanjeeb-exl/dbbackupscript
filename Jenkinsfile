@@ -7,11 +7,11 @@ pipeline {
   stages {
     stage('Choose DB') {
     steps {
-	    /*script {
+	   script {
 		    properties([
 			    parameters {
   choice choices: ['NorthwindDB', 'DevOpsDB'], name: 'DBName' } ])
-	    }*/
+	    }
 echo "The parameters"
     }
 	}
