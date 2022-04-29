@@ -12,7 +12,7 @@ pipeline {
 			    parameters {
   choice choices: ['NorthwindDB', 'DevOpsDB'], name: 'DBName' } ]) 
 	    }*/
-echo "The parameters"
+echo "The parameters dbname %DBName%"
     }
 	}
 
