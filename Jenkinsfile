@@ -1,16 +1,16 @@
 pipeline {
   
   agent any 
-/* parameters {
+ parameters {
   choice choices: ['NorthwindDB', 'DevOpsDB'], name: 'DBName' 
- }*/
+ }
   stages {
     stage('Choose DB') {
     steps {
-	   script {
+	 /*  script {
 		    properties([
 			    parameters {
-  choice choices: ['NorthwindDB', 'DevOpsDB'], name: 'DBName' } ])
+  choice choices: ['NorthwindDB', 'DevOpsDB'], name: 'DBName' } ]) */
 	    }
 echo "The parameters"
     }
