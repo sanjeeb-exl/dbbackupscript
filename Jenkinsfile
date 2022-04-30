@@ -21,8 +21,6 @@ pipeline {
 	      powershell returnStatus: true, script: 'C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\Pipelineascode\\Parameterized-DBBackup\\BackupDB.ps1'
       }
     }
-    
-  }
 	stage('Email') {
     steps {
         script {
@@ -37,6 +35,9 @@ pipeline {
         }
     }
 }
+   
+  }
+
 post {
 always {
 
